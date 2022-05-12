@@ -291,7 +291,7 @@ $jobexpired = false;
 				
 					<ol class="breadcrumb-list booking-step">
 						<li><a href="job-list.php">All jobs</a></li>
-						<li><a target="_blank" href="company.php?ref=<?php echo "$compid"; ?>"><?php echo "$compname"; ?></a></li>
+						<li><a target="_blank" href="company.php?ref=<?php echo "$compid" . '&rating=all'; ?>"><?php echo "$compname"; ?></a></li>
 						<li><span><?php echo "$jobtitle"; ?></span></li>
 					</ol>
 					
@@ -314,7 +314,7 @@ $jobexpired = false;
 									<h2 class="heading mb-15"><?php echo "$jobtitle"; ?></h2>
 								
 									<div class="meta-div clearfix mb-25">
-										<span>at <a target="_blank" href="company.php?ref=<?php echo "$compid"; ?>"><?php echo "$compname"; ?></a> as </span>
+										<span>at <a target="_blank" href="company.php?ref=<?php echo "$compid". '&rating=all'; ?>"><?php echo "$compname"; ?></a> as </span>
 										<?php echo "$sta"; ?>
 									</div>
 									
@@ -334,6 +334,10 @@ $jobexpired = false;
 										<li>
 											<h4 class="heading">Posted: </h4>
 											<?php echo "$opendate"; ?>
+										</li>
+										<li>
+											<h4 class="heading">Rating: </h4>
+											<?php echo "5/5"; ?>
 										</li>
 									</ul>
 									
@@ -400,8 +404,7 @@ $jobexpired = false;
 								<div class="tab-style-01">
 								
 									<ul class="nav" role="tablist">
-										<li role="presentation" class="active"><h4><a href="#relatedJob1" role="tab" data-toggle="tab">More jobs from <?php echo "$compname"; ?></a></h4></li>
-										<li role="presentation" class="active"><h4><a href="#reviews" role="tab" data-toggle="tab">Reviews</a></h4></li>
+										<li role="presentation" class="active" ><h4><a href="#relatedJob1" role="tab" data-toggle="tab">More jobs from <?php echo "$compname"; ?></a></h4></li>
 									</ul>
 
 									<div class="tab-content">

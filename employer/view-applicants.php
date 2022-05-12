@@ -256,7 +256,7 @@ $job_title = $row['title'];
 											
 										</div>
 										
-										<a target="_blank" href="../employee-detail.php?empid=<?php echo $rowb['member_no']; ?>" class="clearfix">
+										<a target="_blank" href="../employee-detail.php?empid=<?php echo $rowb['member_no'].'&rating=all'; ?>" class="clearfix">
 											
 											<div class="image clearfix">
 										    <?php 

@@ -25,7 +25,7 @@ require '../constants/check-login.php';
         $stmt->bindParam(':time', $time);
 
         $stmt->execute();
-        header("location:/".$project."/company.php?ref=".$ref_no. '&rating=all');	 
+        header("location:/".$project."/employee-detail.php?empid=".$ref_no. '&rating=all');	 
 	}catch(PDOException $e)
     {
         echo "error: " . $e->getMessage();

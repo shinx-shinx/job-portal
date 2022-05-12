@@ -335,7 +335,7 @@ $page = 1;
 														
 															<h4 class="heading"><?php echo $row['title']; ?></h4>
 															<div class="meta-div clearfix mb-25">
-															<span>at <a href="company.php?ref=<?php echo "$company_id"; ?>"><?php echo "$compname"; ?></a></span>
+															<span>at <a href="company.php?ref=<?php echo "$company_id" . '&rating=all'; ?>"><?php echo "$compname"; ?></a></span>
 															<?php echo "$sta"; ?>
 															</div>
 															
@@ -441,7 +441,7 @@ $page = 1;
 					            for ($b=1;$b<=$records;$b++)
                                  {
                                  
-		                        ?><li  class="paging-nav" ><a <?php if ($b == $page) { print ' style="background-color:#33B6CB; color:white" '; } ?>  href="company.php?ref=<?php echo "$company_id"; ?>&page=<?php echo "$b"; ?>"><?php echo $b." "; ?></a></li><?php
+		                        ?><li  class="paging-nav" ><a <?php if ($b == $page) { print ' style="background-color:#33B6CB; color:white" '; } ?>  href="company.php?ref=<?php echo "$company_id" . '&rating=all';  ?>&page=<?php echo "$b"; ?>"><?php echo $b." "; ?></a></li><?php
                                  }	
 								 print '<li class="paging-nav"'; if ($page == $records) { print 'class="disabled"'; } print '><a '; if ($page == $records) { print ''; } else { print 'href="company.php?ref='.$company_id.'&page='.$nextpage.'"';} print '><i class="fa fa-chevron-right"></i></a></li>';
 					             }
@@ -458,9 +458,18 @@ $page = 1;
 						</div>
 						
 					</div>
-				
-				</div>
-			
+					<div class="tab-style-01">				
+						<ul class="nav" role="tablist">
+							<li role="presentation" class="active"><h4><a href="#reviews" role="tab" data-toggle="tab">Reviews</a></h4></li>
+						</ul>
+
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane fade in active" id="reviews">
+								<?php require "employee/post-review.php"; ?>
+							</div>
+						</div>
+					</div>	
+				</div>	
 			</div>
 
 			<footer class="footer-wrapper">

@@ -379,7 +379,7 @@ include 'constants/check-login.php';
 					?>
 					</div>
 					<h6><?php echo $row['first_name'];?></h6>
-					<a target="_blank" href="company.php?ref=<?php echo $row['member_no']; ?>">View Company</a>
+					<a target="_blank" href="company.php?ref=<?php echo $row['member_no']. '&rating=all'; ?>">View Company</a>
 					</div>
 							
 					</div>

@@ -192,7 +192,7 @@ $page = 1;
 										</li>
 			
 										<li>
-											<a href="../company.php?ref=<?php echo "$myid"; ?>"><i class="fa fa-briefcase"></i> Company Overview</a>
+											<a href="../company.php?ref=<?php echo "$myid". '&rating=all'; ?>"><i class="fa fa-briefcase"></i> Company Overview</a>
 										</li>
 										<li  class="active">
 											<a href="my-jobs.php"><i class="fa fa-bookmark"></i> Posted Jobs</a>

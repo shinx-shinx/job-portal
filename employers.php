@@ -241,7 +241,7 @@ $page = 1;
 							<div class="GridLex-col-3_sm-4_xs-6_xss-12">
 								
 							<div class="top-company-2">
-							<a target="_blank" href="company.php?ref=<?php echo $row['member_no']; ?>">
+							<a target="_blank" href="company.php?ref=<?php echo $row['member_no'] . '&rating=all'; ?>">
 										
 							<div class="image">
 							<?php 

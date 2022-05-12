@@ -387,7 +387,7 @@ $title = "Job List";
 													
 														<h4 class="heading"><?php echo $row['title']; ?></h4>
 														<div class="meta-div clearfix mb-25">
-															<span>at <a href="company.php?ref=<?php echo "$compid"; ?>"><?php echo "$thecompname"; ?></a></span>
+															<span>at <a href="company.php?ref=<?php echo "$compid". '&rating=all'; ?>"><?php echo "$thecompname"; ?></a></span>
 															<?php echo "$sta"; ?>
 														</div>
 														

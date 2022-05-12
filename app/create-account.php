@@ -57,7 +57,7 @@ try {
 	$role = 'employee';
     $account_type = $_POST['acctype'];
     $last_login = date('d-m-Y h:m A [T P]');
-	$member_no = 'EM'.get_rand_numbers(9).'';
+	$member_no = 'EM'.time().get_rand_numbers(4).'';
     $fname = ucwords($_POST['fname']);
     $lname = ucwords($_POST['lname']);
     $email = $_POST['email'];
@@ -90,7 +90,7 @@ try {
 	$role = 'employer';
     $account_type = $_POST['acctype'];
     $last_login = date('d-m-Y h:m A [T P]');
-    $comp_no = 'CM'.get_rand_numbers(9).'';
+    $comp_no = 'CM'.time().get_rand_numbers(4).'';
     $cname = ucwords($_POST['company']);
     $ctype = ucwords($_POST['type']);
     $email = $_POST['email'];

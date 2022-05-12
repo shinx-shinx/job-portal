@@ -1,6 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "romar";
+$password = "@Hirakagaki12";
 $dbname = "job_portal";
+$project = "job-portal"
 ?>

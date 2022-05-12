@@ -242,7 +242,7 @@ $page = 1;
 											
 										</div>
 										
-										<a target="_blank" href="employee-detail.php?empid=<?php echo $row['member_no']; ?>" class="clearfix">
+										<a target="_blank" href="employee-detail.php?empid=<?php echo $row['member_no'].'&rating=all'; ?>" class="clearfix">
 											
 											<div class="image clearfix">
 										    <?php 

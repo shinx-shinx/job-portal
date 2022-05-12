@@ -602,8 +602,18 @@ header("location:./");
 						
 						</div>
 						
+						<div class="tab-style-01">				
+							<ul class="nav" role="tablist">
+								<li role="presentation" class="active"><h4><a href="#reviews" role="tab" data-toggle="tab">Reviews</a></h4></li>
+							</ul>
+	
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="reviews">
+									<?php require "employer/post-review.php"; ?>
+								</div>
+							</div>
+						</div>								 	
 					</div>
-				
 				</div>
 			
 			</div>
